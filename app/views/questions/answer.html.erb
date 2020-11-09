@@ -5,17 +5,15 @@
   <body>
   <h1>Stupid coaching 😡</h1>
 
-    <div class="banner">
-      <%= @user_message %>
+    <blockquote>
+      <p><%= @user_message %></p>
       <p>-You</p>
-    </div>
+    </blockquote>
 
-    <div class="banner">
-      <div id="bold">
-        <%= @answer %>
-      </div>
-      <p>-Your coach</p>
-    </div>
+  <blockquote>
+    <p><%= @answer %></p>
+    <cite>-Your coach</cite>
+  </blockquote>
 
     <%= link_to "Ask a new question", ask_path %>
   </body>
