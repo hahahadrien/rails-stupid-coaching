@@ -1,0 +1,22 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+  <h1>Stupid coaching 😡</h1>
+
+    <div class="banner">
+      <%= @user_message %>
+      <p>-You</p>
+    </div>
+
+    <div class="banner">
+      <div id="bold">
+        <%= @answer %>
+      </div>
+      <p>-Your coach</p>
+    </div>
+
+    <%= link_to "Ask a new question", ask_path %>
+  </body>
+</html>
